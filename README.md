@@ -1,4 +1,5 @@
-# Crop Pest Classification Using Deep Learning
+# AgriGuard :Automated Pest Classification for Agriculture
+
 
 ## 🌾 Project Overview
 AGRIGUARD: Automated Pest Classification for Agriculture utilizes a Convolutional Neural Network (CNN)-based model to identify pests affecting crops such as rice, wheat, and maize. The system integrates web, mobile, and API interfaces to enable real-time pest detection and provide pest management recommendations. By automating pest classification, AGRIGUARD helps farmers make informed decisions and reduce the overuse of pesticides.
