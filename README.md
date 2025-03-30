@@ -1,70 +1,30 @@
 # Crop Pest Classification Using Deep Learning
 
-This project focuses on building an efficient and automated system for identifying and classifying crop pests using deep convolutional neural networks (DCNN) and transfer learning. This system aims to aid farmers and agricultural practitioners in detecting pests early and implementing precise pest control measures, enhancing food security and promoting sustainable agricultural practices.
+## 🌾 Project Overview
+AGRIGUARD: Automated Pest Classification for Agriculture utilizes a Convolutional Neural Network (CNN)-based model to identify pests affecting crops such as rice, wheat, and maize. The system integrates web, mobile, and API interfaces to enable real-time pest detection and provide pest management recommendations. By automating pest classification, AGRIGUARD helps farmers make informed decisions and reduce the overuse of pesticides.
 
-## Project Overview
+## 🧩 Key Components
+Web Interface: Allows users to upload crop images and receive classification results with confidence scores.
 
-- **Objective**: To develop a robust system that accurately classifies various crop pests from images, leveraging deep learning and transfer learning techniques.
-- **Motivation**: Address challenges in agriculture related to food security, economic impact, and sustainability by using advanced machine learning techniques for early pest detection.
+Mobile Application: Provides real-time pest detection using the device’s camera, with an offline mode to store images in low-connectivity areas.
 
-## Key Components
+Command-Line Interface (CLI): Enables developers and researchers to train, test, and evaluate the model efficiently.
 
-1. **Data Collection and Preprocessing**:
-   - Collected images of various crop pests and applied preprocessing techniques like image normalization and data augmentation to improve model robustness.
+API Integration: RESTful API facilitates seamless communication between the model and external agricultural systems, returning classification results in JSON format.
 
-2. **Deep Convolutional Neural Network (DCNN)**:
-   - Utilized pre-trained models such as ResNet for feature extraction and fine-tuning to adapt to crop pest classification.
-   - Employed transfer learning to leverage the knowledge from large-scale datasets, improving performance with limited agricultural datasets.
+## 🚀 Features
+High-Accuracy Classification: CNN model achieves over 97% accuracy, outperforming baseline models.
 
-3. **Classification System**:
-   - A multi-class classification model that identifies pest types based on input images, facilitating informed pest management decisions.
-   - Integrated a user-friendly interface for uploading images and viewing pest classification results in real time.
+Pesticide Recommendation System: Suggests suitable pesticides based on identified pests.
 
-4. **Pesticide Recommendation System**:
-   - Provides suggested pesticides based on the identified pests, aiding in precise pest control measures.
+Cloud and Edge Computing Support: Ensures real-time inference on cloud platforms and IoT-enabled devices like Raspberry Pi.
 
-## Features
+Grad-CAM Visualizations: Provides saliency maps to validate and interpret model predictions.
 
-- **Real-Time Pest Classification**: Quickly and accurately classifies pest images, allowing for timely interventions.
-- **Transfer Learning**: Enhances model performance by using pre-trained networks, reducing computational resources required for training.
-- **User-Friendly Interface**: A simple interface that allows users to upload images and receive pest classification and pesticide recommendations.
+User Alerts: Sends real-time notifications and alerts to farmers for pest detection and management updates.
 
-## System Requirements
+## 📊 Model & Database Integration
+The CNN model processes pest images uploaded through the web or mobile interface and stores the classification results in a database. SQL/NoSQL databases, such as MySQL or MongoDB, manage user data, pest images, and model predictions. Flask-based APIs ensure smooth communication between the application and database, enabling seamless data retrieval and result visualization.
 
-- **Programming Language**: Python
-- **Frameworks and Libraries**:
-  - TensorFlow and Keras for deep learning
-  - OpenCV for image processing
-- **Database**: MySQL for storing pest information and related data
-- **Hardware**: Requires GPU support for efficient model training and inference
-
-## Setup Instructions
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/KaustubhLabade/ATM_Machine_UI.git
-   ```
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-3. Set up the database and load pest data.
-4. Run the application and navigate to the web interface to upload images and view results.
-
-## Future Enhancements
-
-- Integration with real-time notifications and alerts.
-- Optimization for faster model inference.
-- Enhanced recommendations based on weather and crop type.
-- Expand the dataset to improve model generalization across diverse crop types and regions.
-
-## Contributors
-
-- Kaustubh Labade
-- Rohit Magar
-- Shreyaans Das
-- Onkar Darekar
-
-## License
-
-This project is open-source and available under the MIT License.
+## 🎯 Conclusion
+AGRIGUARD enhances agricultural pest management by automating pest classification and providing accurate recommendations. It reduces pesticide overuse and promotes sustainable farming practices. Future improvements include integrating federated learning for data privacy and utilizing hyperspectral imaging for cross-regional pest analysis, ensuring better adaptability and scalability.
